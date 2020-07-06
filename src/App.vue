@@ -1,32 +1,31 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="top">
+      <common-top></common-top>
     </div>
-    <router-view />
+    <div class="bottom">
+      <div class="left">
+        <common-left></common-left>
+      </div>
+      <div class="right">
+        <common-right></common-right>
+      </div>
+    </div>
   </div>
 </template>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<script>
+import CommonLeft from "./components/CommonLeft.vue";
+import CommonTop from "./components/CommonTop.vue";
+// import CommonRight from "./components/CommonRight.vue";
+import CommonRight from "./components/CommonRight.vue";
+export default {
+  name: "app",
+  components: {
+    CommonLeft,
+    CommonTop,
+    CommonRight
   }
-}
+};
+</script>
+<style lang="scss">
 </style>

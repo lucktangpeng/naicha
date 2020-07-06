@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+$grid-width: 1pt;
+
+@function lenght($number) {
+  @return $number / 2 * $grid-width;
+}
