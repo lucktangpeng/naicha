@@ -38,7 +38,7 @@ export default {
 .all_nav {
   //   background: linear-gradient(to bottom, #ff6900 0%, #ff7e00 56%);
   background: #faae6b;
-  padding: 36.25pt 11.75pt 12.5pt 11.75pt;
+  padding: 36.25pt 11.75pt 22.5pt 11.75pt;
   .nav {
     display: flex;
     justify-content: space-between;
@@ -82,7 +82,13 @@ export default {
           font-weight: 700;
         }
         .address {
+          display: inline-block;
           font-size: 5.485pt;
+          border-radius: 6.15pt;
+          padding: 3.5pt 11.5pt 3.5pt 11.5pt;
+          margin-top: 6.25pt;
+          background: rgba(255, 255, 255, 0.32);
+          color: rgba(116, 115, 141, 1);
         }
       }
     }
